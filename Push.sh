@@ -1,3 +1,4 @@
+git pull
 git fetch
 git checkout Backend
 git add .
