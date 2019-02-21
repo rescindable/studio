@@ -1,7 +1,8 @@
 git fetch
-git checkout Backend
+git commit Backend
 git add .
-git commit -m "Auto push cuz ya boi's hella lazy"
-git pull
+git commit -m "Automatic push cuz ya boi's of the lazy type"
 git push
-git checkout master
+bash Frontend/Push.sh
+bash Backend/Push.sh
+
