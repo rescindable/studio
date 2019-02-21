@@ -14,5 +14,5 @@ except:
 @app.route('/')
 def index():
 	# Placeholder, will get the frontend later
-	return "<h1>I'm running</h1>"+"<script>console.log(\""+errors+"\");</script>"
+	return "<h1>Git test</h1>"+"<script>console.log(\""+errors+"\");</script>"
 
