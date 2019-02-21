@@ -14,6 +14,6 @@ except:
 
 @app.route('/')
 def index():
-	index = header+"Content"+footer
+	index = header+"Content :)"+footer
 	return index+"<script>console.log(\""+errors+"\");</script>"
 
