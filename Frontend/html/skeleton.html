@@ -1,0 +1,22 @@
+<div id="pageWrapper">
+	<div id="calendarWrapper">
+		<div id="previousWeek"></div>
+		<div id="calendar"></div>
+		<div id="nextWeek"></div>
+	</div>
+	<div id="signupSheet">
+		<input v-model="message" placeholder="Your Name">
+		<select v-model="selected">
+			<option disabled value="">Select a day to book</option>
+		</select>
+		<div id="timeSpan">
+			<select v-model="selected">
+				<option disabled value="">From</option>
+			</select>
+			<select v-model="selected>
+				<option disabled value="">To</option>
+			</select>
+		</div>
+		<button v-on:click="book();">Book</button>
+	</div>
+</div>
