@@ -1,3 +1,20 @@
 .Sunday, .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday {
 	padding: 2vh;
 }
+
+.Sunday, .Saturday {
+	background-color: #6c757d;
+}
+
+.Sunday:hover, .Saturday:hover {
+        background-color: #343a40;
+}
+
+.Monday:hover, .Tuesday:hover, .Wednesday:hover, .Thursday:hover, .Friday:hover {
+        background-color: #007bff;
+}
+
+
+.Monday, .Tuesday, .Wednesday, .Thursday, .Friday {
+	background-color: #17a2b8;
+}
