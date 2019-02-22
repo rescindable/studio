@@ -1,9 +1,9 @@
 .preloader-2 {
   margin: 120px auto 0;
 }
-.preloader-2 .line {
+#loader {
   width: 1px;
-  height: 4em;
+  height: 3em;
   background: #fff;
   margin: 0 1px;
   display: inline-block;
