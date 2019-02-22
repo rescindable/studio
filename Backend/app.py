@@ -10,6 +10,7 @@ try:
 	header = open("../Frontend/html/header.html").read()
 	footer = open("../Frontend/html/footer.html").read()
 	mainScript = open("../Frontend/js/main.js").read()
+	mainStyle = open("../Frontend/css/main.css").read()
 	loader = open("../Frontend/html/loader.html").read()
 	loaderstyle = open("../Frontend/css/loader.css").read()
 	skeleton = open("../Frontend/html/skeleton.html").read()
@@ -38,6 +39,11 @@ def getloaderstyle():
 @app.route('/manifest.json')
 def getmanifest():
 	return Response(manifest, mimetype="application/json")
+
+@app.route('/style')
+def getstyle():
+	return Response(mainStyle, mimetype="text/css")
+#
 #
 #
 #

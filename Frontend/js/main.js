@@ -42,3 +42,6 @@ var WeekDisplay = new Vue({
 	el: '#calendarWrapper',
 	
 })
+
+// Swap stylesheets
+document.getElementById('stylesheet').href="/studio/style";
