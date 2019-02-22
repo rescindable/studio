@@ -26,4 +26,4 @@ def getSkeleton():
 
 @app.route('/main')
 def jsmain():
-	return Response(mainScript, mimetype="application/javascript")
+	return Response(mainScript, mimetype="text/javascript")
