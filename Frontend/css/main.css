@@ -8,27 +8,27 @@
 }
 
 .Sunday, .Saturday {
-	background-color: #6c757d;
+	/*background-color: #6c757d;*/
 }
 
 .Sunday:hover, .Saturday:hover {
-        background-color: #343a40;
-	color: #fff;
+        /*background-color: #343a40;
+	color: #fff;*/
 }
 
 .Monday:hover, .Tuesday:hover, .Wednesday:hover, .Thursday:hover, .Friday:hover {
-        background-color: #17a2b8;
+        /*background-color: #17a2b8;*/
 }
 
 
 .Monday, .Tuesday, .Wednesday, .Thursday, .Friday {
-	background-color: #007bff;
+	/*background-color: #007bff;*/
 }
 
 .booked {
-	background-color: #dc3545;
+	/*background-color: #dc3545;*/
 }
 
 .booked:hover {
-	background-color: #ffc107;
+	/*background-color: #ffc107;*/
 }
