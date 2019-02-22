@@ -29,6 +29,6 @@ def getSkeleton():
 def jsmain():
 	return Response(mainScript, mimetype="text/javascript")
 
-@app.route('/loadercss')
+@app.route('/loaderstyle')
 def getloaderstyle():
 	return Response(loaderstyle, mimetype="text/css")
