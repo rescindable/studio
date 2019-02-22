@@ -1,8 +1,5 @@
 .Sunday, .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday {
-	width:15%;
-	height: auto;
-	margin: 1%;
-	padding-bottom: 10vh;
+	margin: 0.3%;
 }
 
 .today {
@@ -19,12 +16,12 @@
 }
 
 .Monday:hover, .Tuesday:hover, .Wednesday:hover, .Thursday:hover, .Friday:hover {
-        background-color: #007bff;
+        background-color: #17a2b8;
 }
 
 
 .Monday, .Tuesday, .Wednesday, .Thursday, .Friday {
-	background-color: #17a2b8;
+	background-color: #007bff;
 }
 
 .booked {
