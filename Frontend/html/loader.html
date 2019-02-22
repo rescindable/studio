@@ -1,7 +1,66 @@
 <div id="pageWrapper">
-	<div id="loader">
+	<div id="loader" class="preloader-2">
+  <span class="line line-1"></span>
+  <span class="line line-2"></span>
+  <span class="line line-3"></span>
+  <span class="line line-4"></span>
+  <span class="line line-5"></span>
+  <span class="line line-6"></span>
+  <span class="line line-7"></span>
+  <span class="line line-8"></span>
+  <span class="line line-9"></span>
+  <div>Loading</div>
+<!-- Loader from https://codepen.io/ahdigital/pen/prXBzN -->
 	</div>
-	<style id="hideall">#loader, #loaderstyle{display:none;}</style>
+	<style id="hideall">#loader, #loaderstyle{display:none;}
+	body {
+  		background: #000;
+	}
+.preloader-2 {
+  margin: 120px auto 0;
+}
+
+div {
+  color: #fff;
+  margin: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.preloader-2 .line {
+  width: 1px;
+  height: 12px;
+  background: #fff;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacity-2 1000ms infinite ease-in-out;
+}
+.preloader-2 .line-1 { animation-delay: 800ms; }
+.preloader-2 .line-2 { animation-delay: 600ms; }
+.preloader-2 .line-3 { animation-delay: 400ms; }
+.preloader-2 .line-4 { animation-delay: 200ms; }
+.preloader-2 .line-6 { animation-delay: 200ms; }
+.preloader-2 .line-7 { animation-delay: 400ms; }
+.preloader-2 .line-8 { animation-delay: 600ms; }
+.preloader-2 .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity-2 { 
+  0% { 
+    opacity: 1;
+    height: 15px;
+  }
+  50% { 
+    opacity: 0;
+    height: 12px;
+  }
+  100% { 
+    opacity: 1;
+    height: 15px;
+  }  
+	</style>
 	<script>
 		document.getElementById("loader").style.display = 'block';
 		document.getElementById("hideall").innerText = "";
