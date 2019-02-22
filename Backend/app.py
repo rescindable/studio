@@ -11,6 +11,7 @@ try:
 	footer = open("../Frontend/html/footer.html").read()
 	mainScript = open("../Frontend/js/main.js").read()
 	loader = open("../Frontend/html/loader.html").read()
+	loaderstyle = open("../Frontend/css/loader.css").read()
 	skeleton = open("../Frontend/html/skeleton.html").read()
 except:
 	errors = errors+"[!] Couldn't get all the files to serve"
@@ -27,3 +28,7 @@ def getSkeleton():
 @app.route('/main')
 def jsmain():
 	return Response(mainScript, mimetype="text/javascript")
+
+@app.route('/loadercss')
+def getloaderstyle():
+	return Response(loaderstyle, mimetype="text/css")
