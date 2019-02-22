@@ -1,34 +1,33 @@
 .Sunday, .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday {
 	margin: 0.3%;
-	min-height: 11vh;
 }
 
 .today {
 	padding: 2%;
 }
 
-.Sunday, .Saturday {
-	/*background-color: #6c757d;*/
+.Sunday .card-body, .Saturday .card-body {
+	background-color: #6c757d;
 }
 
-.Sunday:hover, .Saturday:hover {
-        /*background-color: #343a40;
-	color: #fff;*/
+.Sunday .card-body:hover, .Saturday .card-body:hover {
+        background-color: #343a40;
+	color: #fff;
 }
 
-.Monday:hover, .Tuesday:hover, .Wednesday:hover, .Thursday:hover, .Friday:hover {
-        /*background-color: #17a2b8;*/
+.Monday .card-body:hover, .Tuesday .card-body:hover, .Wednesday .card-body:hover, .Thursday .card-body:hover, .Friday .card-body:hover {
+        background-color: #17a2b8;
 }
 
 
-.Monday, .Tuesday, .Wednesday, .Thursday, .Friday {
-	/*background-color: #007bff;*/
+.Monday .card-body, .Tuesday .card-body, .Wednesday .card-body, .Thursday .card-body, .Friday .card-body {
+	background-color: #007bff;
 }
 
-.booked {
-	/*background-color: #dc3545;*/
+.booked .card-body {
+	background-color: #dc3545;
 }
 
-.booked:hover {
-	/*background-color: #ffc107;*/
+.booked .card-body:hover {
+	background-color: #ffc107;
 }
