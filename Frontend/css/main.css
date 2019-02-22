@@ -5,6 +5,10 @@
 	padding-bottom: 10vh;
 }
 
+.today {
+	padding: 2%;
+}
+
 .Sunday, .Saturday {
 	background-color: #6c757d;
 }
