@@ -8,10 +8,11 @@
 	</div>
 	<form id="submissionForm" @submit="checkForm" action="/studio/api" method="post">
 	<p v-if="errors.length">
-		<b>Please fix the following:</b>
+		<b-alert variant="danger" dismissible v-model="showDismissibleAlert">Please fix the following:
 		<ul>
 			<li v-for="error in errors">{{ error }}</li>
 		</ul>
+		</b-alert>
 	</p>
 	<p>
 		<label for="name">Your Name</label>
