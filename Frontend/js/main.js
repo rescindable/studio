@@ -1,5 +1,5 @@
 var app = new Vue({
-	el: '#pageWrapper',
+	el: '#body',
 	data: {
 		message: "This is Vue"
 	},
