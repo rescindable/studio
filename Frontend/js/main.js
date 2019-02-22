@@ -5,12 +5,7 @@ var app = new Vue({
 	},
 	methods: {
 		reverseMessage: function() {
-			this.message = this.message.split('').reverse().join('')
-		}
-		bookSlot: function() {
-			// Get info from
-			// Send POST here
-			
+			this.message = this.message.split('').reverse().join('');
 		}
 	}
 });

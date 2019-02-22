@@ -33,3 +33,4 @@ def jsmain():
 @app.route('/loaderstyle')
 def getloaderstyle():
 	return Response(loaderstyle, mimetype="text/css")
+#
