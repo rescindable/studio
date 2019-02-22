@@ -1,11 +1,19 @@
 <div id="pageWrapper">
-	<div id="calendarWrapper">
-		<div id="previousWeek"></div>
-		<div id="calendar">
+	<b-container id="calendarWrapper">
+		<b-row>
+			<b-col>
+				<div id="previousWeek"></div>
+			</b-col>
+			<b-col>
+				<div id="calendar">
 			
-		</div>
-		<div id="nextWeek"></div>
-	</div>
+				</div>
+			</b-col>
+			<b-col>
+			<div id="nextWeek"></div>
+			</b-col>
+		</b-row>
+	</b-container>
 	<form id="submissionForm" @submit="checkForm" action="/studio/api" method="post">
 	<p v-if="errors.length">
 		<b-alert variant="danger" dismissible v-model="showDismissibleAlert">Please fix the following:
