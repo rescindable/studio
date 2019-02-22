@@ -1,5 +1,7 @@
 .Sunday, .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday {
-	padding: 2vh;
+	width:15%;
+	height: auto;
+	margin: 1%;
 }
 
 .Sunday, .Saturday {
