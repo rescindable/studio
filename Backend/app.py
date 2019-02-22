@@ -10,13 +10,19 @@ try:
 	header = open("../Frontend/html/header.html").read()
 	footer = open("../Frontend/html/footer.html").read()
 	mainScript = open("../Frontend/js/main.js").read()
+	loader = open("../Frontend/html/loader.html").read()
+	skeleton = open("../Frontend/html/skeleton.html").read()
 except:
 	errors = errors+"[!] Couldn't get all the files to serve"
 
 @app.route('/')
 def index():
-	index = header+"<noscript><!--Add JS less stuff here--></noscript>"+footer
+	index = header+loader+footer
 	return index+"<script>console.log(\""+errors+"\");</script>"
+
+@app.route('skeleton')
+def getSkeleton():
+	return Response(skeleton, mimetype="text/html")
 
 @app.route('/main')
 def jsmain():
