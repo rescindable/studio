@@ -20,7 +20,7 @@ def index():
 	index = header+loader+footer
 	return index+"<script>console.log(\""+errors+"\");</script>"
 
-@app.route('skeleton')
+@app.route('/skeleton')
 def getSkeleton():
 	return Response(skeleton, mimetype="text/html")
 
