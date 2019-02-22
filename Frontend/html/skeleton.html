@@ -1,9 +1,5 @@
 <div id="pageWrapper">
 	<b-container id="calendarWrapper" fluid>
-		<b-row>
-			<b-col>
-				<div id="calendar">
-					<b-container>
 						<b-row>
 							<b-col cols="1" class="Sunday">
 								Sunday
@@ -142,10 +138,6 @@
                                                                 Saturday
                                                         </b-col>
                                                 </b-row>
-					</b-container>			
-				</div>
-			</b-col>
-		</b-row>
 	</b-container>
 	<form id="submissionForm" @submit="checkForm" action="/studio/api" method="post">
 	<p v-if="errors.length">
