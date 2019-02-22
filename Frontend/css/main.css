@@ -22,3 +22,11 @@
 .Monday, .Tuesday, .Wednesday, .Thursday, .Friday {
 	background-color: #17a2b8;
 }
+
+.booked {
+	background-color: #dc3545;
+}
+
+.booked:hover {
+	background-color: #ffc107;
+}
