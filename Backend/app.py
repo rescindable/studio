@@ -15,7 +15,7 @@ except:
 
 @app.route('/')
 def index():
-	index = header+"Content :)"+footer
+	index = header+"<noscript><!--Add JS less stuff here--></noscript>"+footer
 	return index+"<script>console.log(\""+errors+"\");</script>"
 
 @app.route('/main')
