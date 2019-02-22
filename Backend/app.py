@@ -18,7 +18,8 @@ except:
 
 @app.route('/')
 def index():
-	index = header+loader+footer
+	# use the loader instead
+	index = header+skeleton+footer
 	return index+"<script>console.log(\""+errors+"\");</script>"
 
 @app.route('/skeleton')
