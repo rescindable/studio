@@ -15,12 +15,12 @@ var form = new Vue({
 	data: {
 		errors: [],
 		name: null,
-		//from-time: null,
-		//to-time: null,
+		from-time: null,
+		to-time: null,
 	},
 	methods: {
 		checkForm: function(e) {
-			if (this.name) {
+			if (this.name && this.from-time && this.to-time) {
 				return true;
 			}
 			this.errors = [];
