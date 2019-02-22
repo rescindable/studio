@@ -37,3 +37,8 @@ var form = new Vue({
 		}
 	}
 })
+
+var WeekDisplay = new Vue({
+	el: '#calendarWrapper',
+	
+})

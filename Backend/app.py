@@ -13,6 +13,7 @@ try:
 	loader = open("../Frontend/html/loader.html").read()
 	loaderstyle = open("../Frontend/css/loader.css").read()
 	skeleton = open("../Frontend/html/skeleton.html").read()
+	manifest = open("../Frontend/json/manifest.json").read()
 except:
 	errors = errors+"[!] Couldn't get all the files to serve"
 
@@ -33,13 +34,8 @@ def jsmain():
 @app.route('/loaderstyle')
 def getloaderstyle():
 	return Response(loaderstyle, mimetype="text/css")
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
+@app.route('/manifest.json')
+def getmanifest():
+	return Response(manifest, mimetype="application/json")
 #
