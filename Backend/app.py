@@ -19,4 +19,4 @@ def index():
 	return index+"<script>console.log(\""+errors+"\");</script>"
 
 @app.route('/main')
-	return Response(main, mimetype="application/javascript")
+	return Response(mainScript, mimetype="application/javascript")
