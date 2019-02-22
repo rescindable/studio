@@ -16,7 +16,7 @@ var form = new Vue({
 		errors: [],
 		name: null,
 		from-time: null,
-		to-time, null,
+		to-time: null,
 	},
 	methods: {
 		checkForm: function(e) {
