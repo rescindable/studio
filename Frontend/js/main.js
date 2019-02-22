@@ -9,3 +9,25 @@ var app = new Vue({
 		}
 	}
 });
+
+var form = new Vue({
+	el: '#submissionForm',
+	data: {
+		errors: [],
+		name: null,
+		from-time: null,
+		to-time, null,
+	},
+	methods: {
+		checkForm: function(e) {
+			if (this.name) {
+				return true;
+			}
+			this.errors = [];
+			if (!this.name) {
+				this.errors.push("We'll need your name");
+			}
+			e.preventDefault();
+		}
+	}
+})

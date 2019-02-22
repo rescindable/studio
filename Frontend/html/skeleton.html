@@ -4,19 +4,23 @@
 		<div id="calendar"></div>
 		<div id="nextWeek"></div>
 	</div>
-	<div id="signupSheet">
-		<input v-model="message" placeholder="Your Name">
-		<select v-model="selected">
-			<option disabled value="">Select a day to book</option>
-		</select>
-		<div id="timeSpan">
-			<select v-model="selected">
-				<option disabled value="">From</option>
-			</select>
-			<select v-model="selected">
-				<option disabled value="">To</option>
-			</select>
-		</div>
-		<button v-on:click="bookSlot">Book</button>
-	</div>
+	<form id="submissionForm" @submit="checkForm" action="/studio/api" method="post">
+	<p v-if="errors.length">
+		<b>Please fix the following:</b>
+		<ul>
+			<li v-for="error in errors">{{ error }}</li>
+		</ul>
+	</p>
+	<p>
+		<label for="name">Your Name</label>
+		<input id="name" v-model="name" type="text" name="name">
+	</p>
+	
+	<p>
+	</p>
+
+	<p>
+		<input type="submit" value="Submit">
+	</p>
+	</form>
 </div>
