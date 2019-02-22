@@ -11,5 +11,18 @@ Vue.component('btn-scroll-left', {
 
 // Define instance
 var app = new Vue({
-	el: '#body'
+	el: '#body',
+	mouned: function() {
+		this.init();
+	},
+	methods: {
+		init:function () {
+			fetch('/skeleton').then(
+			function(response) {
+				return response;
+			}).then(function(pageskeleton){
+				document.getElementById('body').innerHTML = pageSkeleton;
+			})
+		}
+	}
 })
