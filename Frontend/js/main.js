@@ -27,6 +27,12 @@ var form = new Vue({
 			if (!this.name) {
 				this.errors.push("We'll need your name");
 			}
+			if (!this.fromtime) {
+				this.errors.push("We'll need to know when you want your booking to start");
+			}
+			if (!this.totime) {
+				this.errors.push("We'll need to know when you want your booking to end");
+			}
 			e.preventDefault();
 		}
 	}
