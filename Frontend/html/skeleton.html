@@ -222,7 +222,9 @@
                                 </b-card>
                         </b-col>
                 </b-row>
-	</b-container>
+        </b-container>
+        <b-card>
+        <b-card-title>Book a spot</b-card-title>
 	<form id="submissionForm" @submit="checkForm" action="/studio/api" method="post">
 	<p v-if="errors.length">
 		<b-alert variant="danger" dismissible v-model="showDismissibleAlert">Please fix the following:
@@ -251,5 +253,6 @@
 	<p>
 		<input type="submit" value="Submit">
 	</p>
-	</form>
+        </form>
+        </b-card>
 </div>
