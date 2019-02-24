@@ -43,35 +43,5 @@ def getmanifest():
 @app.route('/style')
 def getstyle():
 	return Response(mainStyle, mimetype="text/css")
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
 #
