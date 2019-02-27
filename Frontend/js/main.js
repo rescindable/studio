@@ -1,3 +1,4 @@
+// This is a comment
 var app = new Vue({
 	el: '#body',
 	data: {
