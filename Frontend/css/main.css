@@ -7,7 +7,7 @@
 }
 
 .Sunday .card-body, .Saturday .card-body {
-	background-color: #6c757d;
+	background-color: /*#6c757d;*/ #000000;
 }
 
 .Sunday .card-body:hover, .Saturday .card-body:hover {
